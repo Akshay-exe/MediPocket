@@ -8,10 +8,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from './ui/carousel';
-import { 
-  Target, 
-  Eye, 
-  Users, 
+import {
+  Target,
+  Eye,
+  Users,
   Calendar,
   Lightbulb,
   Rocket,
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 Through Technology
               </h1>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                We believe that <strong>managing your health</strong> should be <strong>simple, secure,</strong> and <strong>stress-free</strong>. 
+                We believe that <strong>managing your health</strong> should be <strong>simple, secure,</strong> and <strong>stress-free</strong>.
                 That's why we created MediPocket – a <strong>digital health companion</strong> that puts you in control.
               </p>
             </div>
@@ -123,7 +123,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-        <style dangerouslySetInnerHTML={{__html: `
+        <style dangerouslySetInnerHTML={{
+          __html: `
           @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -144,17 +145,17 @@ export default function AboutPage() {
                 Who We Are & Why We Built MediPocket
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                MediPocket was born from a personal experience of healthcare chaos. When our founder's 
-                family faced a medical emergency, critical health records were scattered across different 
+                MediPocket was born from a personal experience of healthcare chaos. When our founder's
+                family faced a medical emergency, critical health records were scattered across different
                 doctors, hospitals, and filing cabinets.
               </p>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              {/* <p className="text-xl text-gray-600 leading-relaxed">
                 We realized that millions of people face this same challenge every day. Important medical 
                 documents get lost, family health histories are incomplete, and sharing records with 
                 healthcare providers is unnecessarily complicated.
-              </p>
+              </p> */}
               <p className="text-xl text-gray-600 leading-relaxed">
-                That's when we decided to build the solution we wished we had – a secure, intelligent 
+                That's when we decided to build the solution we wished we had – a secure, intelligent
                 digital health companion that makes healthcare management simple for everyone.
               </p>
             </div>
@@ -176,7 +177,7 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">Our Mission & Vision</h2>
             <p className="text-lg md:text-xl text-gray-600">Guiding principles that drive everything we do</p>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <Card className="border-2 border-emerald-200 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
               <CardContent className="p-10 text-center">
@@ -185,8 +186,8 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-3xl font-bold text-emerald-700 mb-6">Our Mission</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  To <strong>empower individuals and families</strong> with <strong>secure, accessible, and intelligent</strong> 
-                  digital health record management that <strong>simplifies healthcare navigation</strong> and 
+                  To <strong>empower individuals and families</strong> with <strong>secure, accessible, and intelligent</strong>
+                  digital health record management that <strong>simplifies healthcare navigation</strong> and
                   improves health outcomes.
                 </p>
               </CardContent>
@@ -199,7 +200,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-3xl font-bold text-blue-700 mb-6">Our Vision</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  A world where <strong>every person has complete control</strong> over their health information, 
+                  A world where <strong>every person has complete control</strong> over their health information,
                   enabling <strong>better healthcare decisions</strong> and <strong>stronger relationships</strong> with healthcare providers.
                 </p>
               </CardContent>
@@ -224,7 +225,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">Patients Own Their Data</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Your health information belongs to you. We simply provide the tools to organize 
+                  Your health information belongs to you. We simply provide the tools to organize
                   and access it securely.
                 </p>
               </CardContent>
@@ -237,7 +238,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">Health Records Should Be Portable</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Medical information should move with you seamlessly across providers, cities, 
+                  Medical information should move with you seamlessly across providers, cities,
                   and healthcare systems.
                 </p>
               </CardContent>
@@ -250,7 +251,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">Technology Should Simplify Healthcare</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  We build intuitive tools that reduce complexity, not add to it. Healthcare is 
+                  We build intuitive tools that reduce complexity, not add to it. Healthcare is
                   complicated enough.
                 </p>
               </CardContent>
@@ -309,7 +310,7 @@ export default function AboutPage() {
 
           <div className="mt-16 text-center bg-blue-50 border-2 border-blue-200 rounded-2xl p-10 max-w-3xl mx-auto">
             <p className="text-gray-700 text-xl leading-relaxed">
-              <strong className="text-blue-700">We are a tool</strong> that helps you organize, access, and manage 
+              <strong className="text-blue-700">We are a tool</strong> that helps you organize, access, and manage
               your medical records. We work alongside your healthcare team, not instead of them.
             </p>
           </div>
@@ -329,7 +330,7 @@ export default function AboutPage() {
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-emerald-200 to-teal-200 hidden md:block"></div>
-            
+
             <div className="space-y-16">
               {timelineEvents.map((event, index) => (
                 <div key={index} className={`flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
@@ -344,11 +345,11 @@ export default function AboutPage() {
                       </CardContent>
                     </Card>
                   </div>
-                  
+
                   <div className="flex-shrink-0 w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center relative z-10 mx-6">
                     <event.icon className="w-10 h-10 text-white" />
                   </div>
-                  
+
                   <div className="flex-1 md:pl-12">
                     {/* Spacer for alternating layout */}
                   </div>
@@ -430,7 +431,7 @@ export default function AboutPage() {
             Join Us in Transforming Healthcare
           </h2>
           <p className="text-xl md:text-2xl text-emerald-100 mb-12 leading-relaxed">
-            Experience the future of health record management. Start organizing your family's 
+            Experience the future of health record management. Start organizing your family's
             health information today.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
